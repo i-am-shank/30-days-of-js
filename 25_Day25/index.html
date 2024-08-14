@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Movie Search App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- search tab -->
+            <div id="search-wrapper">
+                <div id="search">
+                    <form id="form">
+                        <div id="movie-input">
+                            <label for="movie-name">Enter a movie name :</label>
+                            <input
+                                type="text"
+                                name="movie-name"
+                                id="movie-name"
+                            />
+                        </div>
+                        <div id="input-fields">
+                            <button type="submit" id="search-btn">
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- display movie-list -->
+            <div id="movie-list-wrapper" class="hidden">
+                <a href="" id="back-to-home">Back</a>
+                <div id="movie-list"></div>
+            </div>
+
+            <!-- display single-movie -->
+            <div id="single-movie-wrapper" class="hidden">
+                <a href="" id="back-to-home">Back</a>
+                <div id="single-movie"></div>
+            </div>
+
+            <!-- error message -->
+            <div id="error-msg">
+                <h1 id="error-heading">Error 404</h1>
+                <i id="error-para">
+                    Unable to fetch details of the movie you're searching for !
+                </i>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
